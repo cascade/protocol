@@ -5,7 +5,7 @@ type Job struct {
 	Machine    *Machine         `json:"machine"         yaml:"machine"`
 	Definition *Definition      `json:"definition"      yaml:"definition"`
 	Inputs     map[string]Input `json:"inputs"          yaml:"inputs"`
-	Steps      []Job            `json:"steps,omitempty" yaml:"steps,omitempty"`
+	Steps      []*Job           `json:"steps,omitempty" yaml:"steps,omitempty"`
 }
 
 // Definition ...
