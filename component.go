@@ -24,10 +24,10 @@ type Component struct {
 	Execute *Execute `json:"execute,omitmepty" yaml:"execute"`
 
 	// Inputs defines what kind of inputs are required for this component.
-	Inputs *Inputs `json:"inputs" yaml:"inputs"`
+	Inputs Inputs `json:"inputs" yaml:"inputs"`
 	// Validation can define validations of this runtime.
 	// Validations *Validations `json:"validations"       yaml:"validations"`
 
 	// Outputs can explicitly specify what kind of outputs this component will create.
-	Outputs *Outputs `json:"outputs" yaml:"outputs"`
+	Outputs Outputs `json:"outputs" yaml:"outputs"`
 }
